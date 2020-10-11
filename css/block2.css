@@ -1,0 +1,46 @@
+#block2{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+.b2card{
+    position: absolute;
+    width: 275px;
+    height: 200px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 20px;
+
+    -webkit-box-shadow: 4px 4px 18px 3px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 18px 3px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 18px 3px rgba(34, 60, 80, 0.2);
+}
+.b2card img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+.b2card .title{
+    font-size: medium;
+    margin-bottom: 1rem;
+}
+.b2card .text{
+    font-size: smaller;
+}
+#analCard{
+    left: calc(50vw - 500px);
+    top: 140px;
+}
+#mesCard{
+    right: calc(50vw - 500px);
+    top: 140px;
+}
+#desCard{
+    top: 220px;
+}
