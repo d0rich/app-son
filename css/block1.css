@@ -1,0 +1,40 @@
+#block1{
+}
+#bg1{
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+#bg1 img{
+    position: relative;
+    height: 100%;
+}
+#content1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+#textblock1{
+    padding-top: 17vh;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+
+}
+#buttons1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#buttons1 div{
+    margin: 5px;
+}
+#title1{
+    padding-bottom: 1rem;
+}
+#text1{
+    padding-bottom: 1rem;
+}
