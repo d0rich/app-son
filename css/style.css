@@ -1,6 +1,8 @@
 body{
     font-family: 'Quicksand', sans-serif;
     margin: 0;
+    overflow-x: hidden;
+    min-height: 200vh;
 }
 .block{
     overflow: hidden;
