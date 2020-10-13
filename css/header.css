@@ -34,7 +34,7 @@
     background-color: rgba( 0, 0, 0, .1);
 }
 #header-buttons{
-    font-size: smaller;
+    font-size: 0.9rem;
     position: absolute;
     right: 0;
     display: flex;
@@ -75,11 +75,8 @@
         left: 10%;
         width: 80px;
         height: 50px;
-        font-size: medium;
+        font-size: 1rem;
         border-radius: 0 0 10px 10px;
-    }
-    #header-buttons{
-        font-size: small;
     }
     .header-button, #signup-button{
         height: 30px;
