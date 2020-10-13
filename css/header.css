@@ -1,5 +1,5 @@
 #header{
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     z-index: 100;
@@ -14,6 +14,24 @@
     justify-content: center;
     align-items: center;
     border-radius: 0 0 20px 20px;
+}
+
+#nav-button{
+    position: absolute;
+    right: 10%;
+    color: gray;
+    height: 30px;
+    padding: 0 15px 7px;
+    display: none;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: bolder;
+    border-radius: 0 0 10px 10px;
+}
+#nav-button:hover{
+    cursor: pointer;
+    color: #197bfd;
+    background-color: rgba( 0, 0, 0, .1);
 }
 #header-buttons{
     font-size: smaller;
@@ -44,11 +62,57 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin: 0 50px 0 50px;
+    margin: 0 100px 0 50px;
 }
 #signup-button div{
     border-radius: 100px;
     background-color: rgba(0,0,0,.3);
     padding: 10px 40px;
     margin: -10px -40px;
+}
+@media screen and (max-width: 880px){
+    #header-logo{
+        left: 10%;
+        width: 80px;
+        height: 50px;
+        font-size: medium;
+        border-radius: 0 0 10px 10px;
+    }
+    #header-buttons{
+        font-size: small;
+    }
+    .header-button, #signup-button{
+        height: 30px;
+        padding: 0 15px 7px;
+    }
+    #signup-button{
+        margin: 0 75px 0 27px;
+    }
+    #signup-button div{
+        padding: 7px 30px;
+        margin: -7px -30px;
+    }
+}
+@media screen and (max-width: 660px){
+    #header-buttons{
+        display: none;
+    }
+    #header-buttons.active{
+        display: flex;
+        flex-direction: column;
+        right: 10%;
+        top: 37px;
+        padding: 0 10px 10px 10px;
+        background-color: rgba(244,251,252,.9);
+        border-radius: 0 0 20px 20px;
+    }
+    #header-buttons.active .header-button, #header-buttons.active #signup-button{
+        padding: 7px 20px;
+        height: auto;
+        border-radius: 10px;
+        margin: 0;
+    }
+    #nav-button{
+        display: flex;
+    }
 }
