@@ -16,8 +16,6 @@
     justify-content: center;
     border-radius: 5px;
     padding: 20px;
-
-
 }
 .b2card img{
     width: 50px;
@@ -41,4 +39,59 @@
 }
 #desCard{
     top: 220px;
+}
+@media screen and (max-width: 1100px) {
+    #block2{
+        height: 800px;
+    }
+    #analCard{
+        left: 10%;
+        top: 140px;
+    }
+    #mesCard{
+        right: 10%;
+        top: 140px;
+    }
+    #desCard{
+        top: 400px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #block2{
+        height: 1100px;
+    }
+    #analCard{
+        left: 15%;
+        top: 140px;
+    }
+    #mesCard{
+        left: 15%;
+        top: 680px;
+    }
+    #desCard{
+        right: 15%;
+        top: 400px;
+    }
+}
+@media screen and (max-width: 450px) {
+    #block2{
+        height: 900px;
+    }
+    .b2card{
+        width: 250px;
+        height: 180px;
+    }
+    #analCard{
+        left: 5%;
+        top: 120px;
+    }
+    #mesCard{
+        left: 5%;
+        top: 600px;
+    }
+    #desCard{
+        right: 5%;
+        top: 360px;
+    }
 }
