@@ -16,6 +16,7 @@
     border-radius: 0 0 20px 20px;
 }
 #header-buttons{
+    font-size: smaller;
     position: absolute;
     right: 0;
     display: flex;
@@ -38,5 +39,16 @@
 }
 #signup-button{
     color: #FFFFFF;
-    font-weight: bolder;
+    padding: 0 20px 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0 50px 0 50px;
+}
+#signup-button div{
+    border-radius: 100px;
+    background-color: rgba(0,0,0,.3);
+    padding: 10px 40px;
+    margin: -10px -40px;
 }
