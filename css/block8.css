@@ -1,0 +1,15 @@
+#block8{
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+#getStarted{
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin-left: 70px;
+    padding: 20px 70px;
+    font-weight: bolder;
+}
+#getStarted:hover{
+    cursor: pointer;
+}

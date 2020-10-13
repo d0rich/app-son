@@ -10,6 +10,12 @@
     justify-content: center;
     margin: 0 30px;
 }
+#period .title{
+    margin-bottom: 1rem;
+}
+#period .text{
+    margin-bottom: 1rem;
+}
 .b5card{
     width: 250px;
     display: flex;

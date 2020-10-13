@@ -1,0 +1,39 @@
+#footer .title,#footer .text{
+    color:white;
+}
+#subscribe{
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#subscribe .title{
+    font-size: xx-large;
+}
+.hor{
+    height: 2px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+#footer-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+#footer-links .text{
+    font-size: small;
+}
+#about{
+    display: flex;
+}
+#about .text{
+    margin-right: 20px;
+}
+#sm{
+    display: flex;
+}
+#sm img{
+    margin-right: 10px;
+    height: 1rem;
+}

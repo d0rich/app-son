@@ -1,0 +1,55 @@
+#block6{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+#b6img{
+    z-index: 2;
+    max-width: 33vw;
+}
+#b6textblock{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 70px;
+}
+#b6title{
+}
+#tweets{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    padding: 20px;
+}
+.tweet{
+    margin: 10px;
+    width: 300px;
+    padding: 35px 30px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+.tweet-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.tweet-header .title{
+    font-size: larger;
+}
+.tweet-logo{
+    margin-top: 4px;
+    width: 20px;
+    align-self: flex-start;
+}
+#dashes{
+    display: flex;
+    flex-direction: row;
+}
+.dash{
+    width: 30px;
+    height: 13px;
+    background-color: gray;
+    border-radius: 100px;
+    margin-right: 5px;
+}

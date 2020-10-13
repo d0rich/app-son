@@ -68,3 +68,8 @@ body{
     align-items: center;
     font-weight: bolder;
 }
+.no-select{
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
