@@ -19,6 +19,27 @@ body{
     overflow: hidden;
     width: 100%;
 }
+#to2ndBlock{
+    position: absolute;
+    top: calc(100vh - 20px);
+    left: calc(50vw - 20px);
+    z-index: 50;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 100px;
+    font-size: xx-large;
+    color: #a7a7a7;
+}
+#to2ndBlock:hover{
+    cursor: pointer;
+    background-color: #f5f5f5;
+}
 .shadow{
     -webkit-box-shadow: 4px 4px 18px 3px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 4px 4px 18px 3px rgba(34, 60, 80, 0.2);
@@ -30,7 +51,7 @@ body{
     color: #262626;
 }
 .text{
-    color: #515657;
+    color: #a7a7a7;
 }
 .text-center{
     text-align: center;

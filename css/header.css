@@ -70,6 +70,10 @@
     padding: 10px 40px;
     margin: -10px -40px;
 }
+#signup-button div:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,.5);
+}
 @media screen and (max-width: 880px){
     #header-logo{
         left: 10%;

@@ -11,4 +11,8 @@ $(document).ready(function () {
             buttons.addClass('active')
         else buttons.removeClass('active')
     })
+    $("#to2ndBlock").click(function () {
+        $('html').animate({ scrollTop: $('#block2').offset().top }, 500);
+        return false;
+    });
 });
