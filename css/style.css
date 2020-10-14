@@ -79,6 +79,27 @@ body{
      align-items: center;
      background-color: #197bfd;
  }
+.link{
+    text-decoration: none;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+.link:hover .arrow{
+    animation: link-arrow-wiggle ease-in-out 1s infinite;
+}
+@keyframes link-arrow-wiggle {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
 .no-select{
     -ms-user-select: none;
     -moz-user-select: none;

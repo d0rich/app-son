@@ -90,7 +90,7 @@
         margin: -7px -30px;
     }
 }
-@media screen and (max-width: 660px){
+@media screen and (max-width: 680px){
     #header-buttons{
         display: none;
     }
