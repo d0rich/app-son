@@ -67,7 +67,7 @@ body{
     align-items: center;
     font-weight: bolder;
 }
-.btn:hover{
+.btn:hover, .btn.active{
      cursor: pointer;
      height: 2.25em;
      display: flex;
@@ -75,7 +75,6 @@ body{
      color: #FFF;
      font-weight: bolder;
      border-width: 0px;
-     border-radius: 100px;
      align-items: center;
      background-color: #197bfd;
  }

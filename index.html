@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/block5.js"></script>
     <title>Задание номер 1</title>
 </head>
 <body>
@@ -164,7 +165,7 @@
                 </div>
             </div>
         </div>
-        <div id="block5" class="block row">
+        <div id="block5" class="block">
             <div id="period">
                 <div class="title">Pricing Plan</div>
                 <div class="text">
@@ -172,11 +173,11 @@
                     do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
                 </div>
                 <div id="switchPeriod" class="row">
-                    <div class="btn">Monthly</div>
-                    <div class="btn">Yearly</div>
+                    <div id="setMonthlyPrice" class="btn no-select active">Monthly</div>
+                    <div id="setYearlyPrice" class="btn no-select">Yearly</div>
                 </div>
             </div>
-            <div id="b5cards" class="row">
+            <div id="b5cards">
                 <div id="standard" class="b5card shadow">
                     <img src="./files/block5/standard.svg" alt="Standard">
                     <div class="title">Standard</div>
@@ -188,7 +189,7 @@
                         <li>50 gb Bandwith</li>
                         <li>Free Support</li>
                     </ul>
-                    <div class="title color-primary"><font style="font-size: medium">$</font>19.00</div>
+                    <div id="standardPrice" class="title color-primary"><font style="font-size: medium">$</font>19.00</div>
                     <div class="btn">Try Now</div>
                 </div>
                 <div id="premium" class="b5card shadow">
@@ -202,7 +203,7 @@
                         <li>50 gb Bandwith</li>
                         <li>Free Support</li>
                     </ul>
-                    <div class="title color-primary"><font style="font-size: medium">$</font>49.00</div>
+                    <div id="premiumPrice" class="title color-primary"><font style="font-size: medium">$</font>49.00</div>
                     <div class="btn">Try Now</div>
                 </div>
             </div>
