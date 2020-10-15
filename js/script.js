@@ -1,4 +1,54 @@
+
 $(document).ready(function () {
+    let block1 =$('#block1').offset().top;
+    let block2 =$('#block2').offset().top;
+    let block3 =$('#block3').offset().top;
+    let block7 =$('#block7').offset().top;
+
+    let b1enabled = false
+    let b2cards = $('.b2card')
+    let b2enabled = false
+    let b3enabled = false
+    let b7enabled = false
+    let b7secNews = $('.sec-news')
+    let scroll = function() {
+        // проверка на докрутку до определенного элемента
+        //если мы докрутили до нужного элемента
+        if ($(this).scrollTop() + window.innerHeight/2 > block1 && !b1enabled) {
+            // создаем эффекты и анимацию
+            $('#phone1').removeClass('disabled')
+            setTimeout(() => $('#phone2').removeClass('disabled'), 300)
+            setTimeout(() => $('#phone3').removeClass('disabled'), 600)
+            b1enabled = true
+        }
+        if ($(this).scrollTop() + window.innerHeight/2 > block2 && !b2enabled) {
+            // создаем эффекты и анимацию
+            $(b2cards[0]).removeClass('disabled')
+            setTimeout(() => $(b2cards[1]).removeClass('disabled'), 300)
+            setTimeout(() => $(b2cards[2]).removeClass('disabled'), 600)
+            b2enabled = true
+        }
+        if ($(this).scrollTop() + window.innerHeight/2 > block3 && !b3enabled) {
+            // создаем эффекты и анимацию
+            $('#rec1').removeClass('disabled')
+            setTimeout(() => $('#pic1-1').removeClass('disabled'), 300)
+            setTimeout(() => $('#pic1-2').removeClass('disabled'), 600)
+            setTimeout(() => $('#rec2').removeClass('disabled'), 900)
+            setTimeout(() => $('#pic2-2').removeClass('disabled'), 1200)
+            setTimeout(() => $('#pic2-1').removeClass('disabled'), 1500)
+            b3enabled = true
+        }
+        if ($(this).scrollTop() + window.innerHeight/2 > block7 && !b7enabled) {
+            // создаем эффекты и анимацию
+            $('#main-news').removeClass('disabled')
+            setTimeout(() => $(b7secNews[0]).removeClass('disabled'), 300)
+            setTimeout(() => $(b7secNews[1]).removeClass('disabled'), 600)
+            setTimeout(() => $(b7secNews[2]).removeClass('disabled'), 900)
+            b7enabled = true
+        }
+    }
+    scroll();
+    $(window).scroll(scroll);
     //Header
     $(".header-button").click(function () {
         let elementClick = $(this).attr("scrollto");

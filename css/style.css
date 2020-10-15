@@ -248,11 +248,16 @@ body{
 #phones{
     position: relative;
 }
+#phone1.disabled, #phone2.disabled, #phone3.disabled{
+    opacity: 0;
+    transform: translateY(150px);
+}
 #phone1{
     position: absolute;
     z-index: 13;
     width: 350px;
     bottom: -350px;
+    transition: all .7s ease-in-out;
 }
 #phone2{
     position: absolute;
@@ -260,6 +265,7 @@ body{
     left: calc(50% - 380px);
     width: 320px;
     bottom: -150px;
+    transition: all .7s ease-in-out;
 }
 #phone3{
     position: absolute;
@@ -267,6 +273,7 @@ body{
     right: calc(50% - 380px);
     width: 320px;
     bottom: -150px;
+    transition: all .7s ease-in-out;
 }
 /* block2 */
 #block2{
@@ -275,6 +282,10 @@ body{
     justify-content: center;
     align-content: center;
     position: relative;
+}
+.b2card.disabled{
+    opacity: 0;
+    transform: translateY(50px);
 }
 .b2card{
     position: absolute;
@@ -287,6 +298,11 @@ body{
     justify-content: center;
     border-radius: 5px;
     padding: 20px;
+    transition: all .7s ease-in-out;
+}
+.b2card:hover{
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
 }
 .b2card img{
     width: 50px;
@@ -332,41 +348,55 @@ body{
     height: 300px;
     border-radius: 40px;
 }
+#rec1.disabled, #pic1-1.disabled, #pic1-2.disabled{
+    transform: translateX(-200px);
+    opacity: 0;
+}
 #rec1{
-    transform-origin: center;
+    transform-origin: center center;
     transform: rotate(50deg);
     top: 70px;
     right: 70px;
+    transition: all .7s ease-in-out;
 }
 #pic1-1{
     position: absolute;
     height: 300px;
     top: 70px;
     right: 160px;
+    transition: all .7s ease-in-out;
 }
 #pic1-2{
     position: absolute;
     height: 260px;
     top: 90px;
     right: 50px;
+    transition: all .7s ease-in-out;
+}
+#rec2.disabled, #pic2-1.disabled, #pic2-2.disabled{
+    transform: translateX(200px);
+    opacity: 0;
 }
 #rec2{
     transform-origin: center;
     transform: rotate(50deg);
     top: 70px;
     left: 70px;
+    transition: all .7s ease-in-out;
 }
 #pic2-1{
     position: absolute;
     height: 300px;
     top: 70px;
     left: 50px;
+    transition: all .7s ease-in-out;
 }
 #pic2-2{
     position: absolute;
     height: 260px;
     top: 90px;
     left: 180px;
+    transition: all .7s ease-in-out;
 }
 #block3 .title{
     padding-bottom: 1rem;
@@ -690,11 +720,16 @@ body{
     max-width: 900px;
     margin: 0 20px;
 }
+#main-news.disabled{
+    transform: translateX(-200px);
+    opacity: 0;
+}
 #main-news{
     width: 49%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    transition: all .7s ease-in-out;
 }
 #main-news img{
     width: 100%;
@@ -712,12 +747,17 @@ body{
     display: flex;
     flex-direction: column;
 }
+.sec-news.disabled{
+    transform: translateX(200px);
+    opacity: 0;
+}
 .sec-news{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+    transition: all .7s ease-in-out;
 }
 .sec-news img{
     width: 30%;
