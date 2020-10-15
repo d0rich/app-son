@@ -19,12 +19,20 @@
 #period .text{
     margin-bottom: 1rem;
 }
+#b5cardsWrap{
+    overflow-x: auto;
+    overflow-y: visible;
+    width: 100%;
+}
 #b5cards{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-top: 30px;
 }
 .b5card{
+    flex-grow: 0;
+    flex-shrink: 0;
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -73,10 +81,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 50px 0;
+        padding: 50px 0 0;
     }
     #b5cards{
-        padding: 30px 30px 0 30px;
+        width: fit-content;
+        max-width: 100%;
     }
     #period{
         padding-bottom: 10px;
@@ -90,6 +99,5 @@
         margin: 0 10px;
     }
     #b5cards{
-        padding: 10px 30px 100px 30px;
     }
 }

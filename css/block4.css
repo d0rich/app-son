@@ -110,11 +110,16 @@
 }
 @media screen and (max-width: 850px) {
     #b4icons{
-        height: 620px;
+        height: 380px;
     }
     .icon-block{
         flex-direction: row;
         align-items: center;
+        width: 430px;
+    }
+    .icon-block img{
+        width: 90px;
+        height: 90px;
     }
     .icon-block .icon-textblock{
         margin-left: 20px;
@@ -122,21 +127,21 @@
     .icon-block .title{
         text-align: left;
         padding-top: 0rem;
-        font-size: larger;
+        font-size: large;
     }
     .icon-block .text{
         text-align: left;
         padding-top: 0.7rem;
-        font-size: smaller;
+        font-size: medium;
     }
     #icon4-1{
         left: unset;
     }
     #icon4-2{
-        top: 250px;
+        top: 150px;
     }
     #icon4-3{
-        top: 500px;
+        top: 260px;
         right: unset;
     }
     .line{
@@ -147,10 +152,12 @@
         top: unset;
     }
     #line4-1{
+        display: none;
         top: 75px;
         left: calc(50vw - 125px);
     }
     #line4-2{
+        display: none;
         top: 325px;
         left: calc(50vw - 125px);
         right: unset;
@@ -158,22 +165,32 @@
 }
 @media screen and (max-width: 450px) {
     #b4icons{
-        height: 500px;
+        height: 300px;
     }
     .icon-block{
-        width: 280px;
+        width: 90%;
+    }
+    .icon-block img{
+        width: 70px;
+        height: 70px;
     }
     .icon-block .icon-textblock{
         margin-left: 15px;
+    }
+    .icon-block .title{
+        font-size: larger;
+    }
+    .icon-block .text{
+        font-size: smaller;
     }
     #icon4-1{
         left: unset;
     }
     #icon4-2{
-        top: 200px;
+        top: 125px;
     }
     #icon4-3{
-        top: 400px;
+        top: 210px;
         right: unset;
     }
     .line{

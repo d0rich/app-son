@@ -18,14 +18,15 @@
 
 #nav-button{
     position: absolute;
-    right: 10%;
+    right: 45px;
     color: gray;
     height: 30px;
     padding: 0 15px 7px;
     display: none;
     justify-content: center;
     align-items: flex-end;
-    font-weight: bolder;
+    font-weight: bold;
+    font-size: 1.5rem;
     border-radius: 0 0 10px 10px;
 }
 #nav-button:hover{
@@ -101,7 +102,7 @@
     #header-buttons.active{
         display: flex;
         flex-direction: column;
-        right: 10%;
+        right: 10px;
         top: 37px;
         padding: 0 10px 10px 10px;
         background-color: rgba(244,251,252,.9);

@@ -2,12 +2,6 @@
     html{
         font-size: 10pt;
     }
-    .btn{
-        padding: 0 calc(1.5em - 3px) !important;
-    }
-    .btn:hover{
-        padding: 0 1.5em;
-    }
 }
 body{
     font-family: 'Quicksand', sans-serif;
@@ -77,22 +71,23 @@ body{
 }
 
 .btn{
-    height: calc(2.25em - 6px);
-    width: fit-content;
+    height: calc(3em - 6px);
+    width: calc(10em - 6px);
     display: flex;
-    padding: 0 calc(3em - 3px);
+    justify-content: center;
     border-style: solid;
     border-width: 3px;
     border-radius: 100px;
     color: #197bfd;
+    font-size: 1rem;
     align-items: center;
     font-weight: bolder;
 }
 .btn:hover, .btn.active{
      cursor: pointer;
-     height: 2.25em;
+     height: 3em;
+     width: 10em;
      display: flex;
-     padding: 0 3em;
      color: #FFF;
      font-weight: bolder;
      border-width: 0px;
