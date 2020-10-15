@@ -20,15 +20,15 @@ $(document).ready(function () {
     $("#setMonthlyPrice").click(function () {
         $(this).addClass('active')
         $('#setYearlyPrice').removeClass('active')
-        $('#standardPrice').html('<font style="font-size: medium">$</font>19.00')
-        $('#premiumPrice').html('<font style="font-size: medium">$</font>49.00')
+        $('#standardPrice').html('<span style="font-size: medium">$</span>19.00')
+        $('#premiumPrice').html('<span style="font-size: medium">$</span>49.00')
         return false;
     });
     $("#setYearlyPrice").click(function () {
         $(this).addClass('active')
         $('#setMonthlyPrice').removeClass('active')
-        $('#standardPrice').html('<font style="font-size: medium">$</font>190.00')
-        $('#premiumPrice').html('<font style="font-size: medium">$</font>490.00')
+        $('#standardPrice').html('<span style="font-size: medium">$</span>190.00')
+        $('#premiumPrice').html('<span style="font-size: medium">$</span>490.00')
         return false;
     });
     //Block6

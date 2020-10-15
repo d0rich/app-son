@@ -93,7 +93,7 @@ body{
      display: flex;
      color: #FFF;
      font-weight: bolder;
-     border-width: 0px;
+     border-width: 0;
      align-items: center;
      background-color: #197bfd;
  }

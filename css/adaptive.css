@@ -262,7 +262,7 @@
     }
     .icon-block .title{
         text-align: left;
-        padding-top: 0rem;
+        padding-top: 0;
         font-size: large;
     }
     .icon-block .text{
